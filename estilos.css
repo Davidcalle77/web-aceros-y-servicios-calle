@@ -1,0 +1,541 @@
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+/* El selector `:root` en CSS selecciona el elemento raíz del documento, que normalmente es el `:root`<html> `elemento. En este caso, el selector `:root` se utiliza para establecer la propiedad `scroll-behavior` en `auto`. */
+:root {
+  scroll-behavior: auto;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  text-align: justify;
+  background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
+}
+
+/* El código CSS `.contenedor` define los estilos para un elemento contenedor. */
+.contenedor {
+  width: 100%;
+  max-width: 1200px;
+  overflow: hidden;
+  margin: auto;
+  padding: 15px 0;
+}
+
+.header {
+  height: 100vh;
+  /* 02 */
+  background-image: linear-gradient(to top, rgba(12, 8, 19, 0.486) 0%, rgba(37, 38, 40, 0.514) 100%), url(img/tornillo\ acero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.head {
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* La clase CSS `.hamburguer` define los estilos para un ícono de menú de hamburguesa. */
+.hamburguer {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  background: #fff;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+
+.menu-navegacion {
+  position: fixed;
+  top: 0;
+  width: 30vw;
+  height: 100%;
+  background-image: linear-gradient(to top, #8c8ed1 0%, #fbc2eb 100%);
+  /* 028 */
+  background-image: linear-gradient(135deg, #08069c 0%, #181719 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  right: 0;
+  transform: translateX(110%);
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+
+.spread {
+  transform: translateX(0);
+}
+
+.menu-navegacion a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.titulo {
+  font-size: 60px;
+  margin-bottom: 15px;
+}
+
+.copy {
+  font-weight: 300;
+  font-size: 25px;
+}
+
+/* services */
+
+.subtitulo {
+  color: #181719;
+  font-size: 40px;
+  text-align: center;
+  font-weight: 300;
+  font-family: 'Courier New', Courier, monospace;
+  margin-bottom: 30px;
+}
+
+.texto1{
+  text-align: center;
+}
+
+.texto2{
+  text-align: center;
+}
+
+.texto3{
+  text-align: center;
+}
+
+.Misión {
+  color: black;
+  background-color: rgba(128, 128, 128, 0.083);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: justify;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 20px;
+}
+
+.Visión {
+  color: black;
+  background-color: rgba(128, 128, 128, 0.083);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: justify;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 20px;
+}
+
+.colores {
+  color: black;
+  background-color: rgba(128, 128, 128, 0.083);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: justify;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 20px;
+}
+
+.Valores {
+  color: black;
+  background-color: rgba(128, 128, 128, 0.083);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: justify;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 20px;
+}
+
+.compañia {
+  color: #181719;
+  text-align: justify;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: rgba(128, 128, 128, 0.083);
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 20px;
+}
+
+.services-contenedor {
+  color: #181719;
+  text-align: justify;
+}
+
+.contenedor-servicio {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+
+.contenedor-servicio img {
+  width: 350px;
+  height: 250px;
+  border-radius: 10px;
+}
+
+.checklist-servicio {
+  width: 45%;
+}
+
+/* El código anterior define los estilos CSS para una clase llamada "servicio". Establece el margen, la
+familia de fuentes, el relleno, el color de fondo y el margen nuevamente para la clase. */
+.service {
+  margin-bottom: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgba(128, 128, 128, 0.083);
+  margin: 15px;
+  border-radius: 10px;
+}
+
+.n-service {
+  margin-bottom: 7px;
+  color: #181719;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.number {
+  display: inline-block;
+  /* 02 */
+  background-image: linear-gradient(to top, #0d1b7e 0%, #0d1b7e);
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  margin-right: 5px;
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.gallery {
+  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  
+}
+
+.contenedor-galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+
+.img-galeria {
+  width: 16%;
+  display: block;
+  margin-bottom: 15px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, .6);
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+/* Este código CSS define el estilo de una caja de luz o ventana modal que aparece cuando se hace clic
+en una imagen. Establece la posición en fija, llena toda la pantalla con un fondo negro
+semitransparente, centra la imagen vertical y horizontalmente y la oculta fuera de la pantalla con
+una propiedad de transformación. La propiedad de transformación se usa para animar la caja de luz
+cuando aparece, cambiándola de su posición oculta a su posición centrada. */
+.imagen-light {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.534);
+  transform: translate(100%);
+  transition: transform .1s ease-in-out;
+}
+
+.agregar-imagen {
+  width: 60%;
+  transform: scale(0);
+  border-radius: 10px;
+  transition: transform .3s .2s;
+}
+
+.center {
+  margin: 0 auto;
+  width: 300px;
+  display: block;
+  
+}
+
+/* El código anterior define una clase CSS llamada "showImage" y establece la propiedad de
+transformación CSS para escalar el elemento a su tamaño original (factor de escala de 1). Esta clase
+se puede aplicar a un elemento HTML para mostrarlo con su tamaño original. */
+.showImage {
+  transform: scale(1);
+}
+
+.show {
+  transform: translate(0);
+}
+
+/* El código anterior define el estilo CSS para un botón de cierre. Establece que la posición del botón
+sea absoluta, con un margen superior y derecho de 15 píxeles. El ancho del botón está configurado en
+40 píxeles y el cursor está configurado para ser un puntero. */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 40px;
+  cursor: pointer;
+  
+}
+
+/* Este código CSS define el estilo de una sección del sitio web que muestra información sobre
+expertos. Establece el ancho de la sección al 100 % de su contenedor, usa flexbox para envolver el
+contenido y alinearlo uniformemente, y establece el color del texto en blanco. */
+.experts {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+  
+}
+
+.cont-expert {
+  width: 30%;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+
+.cont-expert img {
+  display: block;
+  margin: auto;
+  width: 70%;
+  border-radius: 10px;
+}
+
+.n-expert {
+  width: 100%;
+  display: inline-block;
+  margin-top: 20px;
+  font-weight: 400;
+}
+
+footer {
+  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+  padding-bottom: 0.1px;
+  border-radius: 10px;
+  
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+
+.contact-us {
+  width: 40%;
+  color: #fff;
+}
+
+.brand {
+  font-weight: 100;
+  font-size: 40px;
+  text-align: left;
+}
+
+.brand+p {
+  font-weight: 100;
+}
+
+.desarrolla {
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.tecno {
+  text-align:right;
+  
+
+}
+
+.derechos {
+  text-align: left;
+  font-family: 'Courier New', Courier, monospace;
+
+}
+
+
+.social-media {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social-media-icon {
+  display: inline-block;
+  margin-left: 10px;
+  margin-top: 50px;
+  width: 60px;
+  height: 60px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+}
+
+.social-media-icon i {
+  font-size: 30px;
+  line-height: 60px;
+}
+
+.line {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  height: 1px;
+  background: #fff;
+  margin-bottom: 60px;
+}
+
+.social-media-icon:hover {
+  background: #fff;
+  color: #050167;
+}
+
+@media screen and (max-width: 800px) {
+  .menu-navegacion {
+    width: 50vw;
+  }
+
+  .titulo {
+    font-size: 40px;
+  }
+
+  .contenedor-servicio img {
+    width: 80%;
+    margin-bottom: 40px;
+  }
+
+  .checklist-servicio {
+    width: 80%;
+  }
+
+  .service {
+    margin-bottom: 30px;
+  }
+
+  .img-galeria {
+    width: 45%;
+  }
+
+  .agregarImagen {
+    width: 80%;
+  }
+
+
+  .cont-expert {
+    width: 80%;
+  }
+
+  .footer-content {
+    justify-content: center;
+  }
+
+  .social-media {
+    width: 80%;
+    justify-content: space-evenly;
+  }
+
+  .social-media-icon {
+    margin-left: 0;
+  }
+
+  .contact-us {
+    text-align: center;
+    width: 80%;
+    margin-bottom: 40px;
+  }
+
+}
+
+
+/* Esta es una consulta de medios que apunta a pantallas con un ancho máximo de 500 píxeles. Establece
+el ancho del elemento con la clase "menu-navegacion" al 65% del ancho de la ventana gráfica. Es
+probable que esto se haga para ajustar el diseño del menú de navegación para pantallas más pequeñas,
+haciéndolo más receptivo y más fácil de usar en dispositivos móviles. */
+
+@media screen and (max-width: 500px) {
+  .menu-navegacion {
+    width: 65vw;
+  }
+
+  .hamburguer {
+    top: 20px;
+    right: 20px;
+  }
+
+  .titulo {
+    font-size: 30px;
+  }
+
+  .subtitulo {
+    font-size: 30px;
+  }
+
+  .img-galeria {
+    width: 95%;
+  }
+
+  .agregar-imagen {
+    width: 90%;
+  }
+
+  /* Este código CSS establece el ancho del elemento con la clase "social-media" al 100% de su
+contenedor y alinea sus elementos secundarios con el mismo espacio entre ellos usando la
+propiedad "justify-content: space-evenly". Es probable que esto se use para alinear
+horizontalmente los íconos o enlaces de las redes sociales dentro de una sección del sitio web. */
+  .social-media {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+
+  .social-media-icon {
+    margin-left: 0;
+  }
+
+  /* Este código CSS define el estilo de un elemento con la clase "contáctenos". Está centrando el
+texto dentro del elemento, configurando el ancho al 95% de su contenedor principal y agregando
+un margen de 40px en la parte inferior del elemento. Es probable que esto se use para diseñar
+una sección del sitio web que contiene información de contacto o un formulario de contacto. */
+  .contact-us {
+    text-align: center;
+    width: 95%;
+    margin-bottom: 40px;
+  }
+
+}

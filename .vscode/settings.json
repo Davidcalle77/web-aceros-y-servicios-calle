@@ -1,0 +1,7 @@
+{
+    "docwriter.style": "Auto-detect",
+    "docwriter.language": "Spanish",
+    "console-ninja.toolsToEnableSupportAutomaticallyFor": {
+        "next.js": false
+    }
+}
